@@ -1,0 +1,209 @@
+
+**** 12/14/24 01:48:28 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-a"  [ C:\Users\DTIC\Desktop\P1_Pspice\P1_Pspice-PSpiceFiles\SCHEMATIC1\a.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "a.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../librarii/smls14bet.lib" 
+* From [PSPICE NETLIST] section of C:\Users\DTIC\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 2ms 0 50ns 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source P1_PSPICE
+R_R11         N55728 N55404  1k TC=0,0 
+Q_Q1         N55758 N55850 N56156 BC817-25 
+V_V2         N55404 0 15v
+R_R20         0 N55912  2k TC=0,0 
+R_R27         0 N56396  4.7 TC=0,0 
+R_R28         0 N56150  47k TC=0,0 
+R_R24         N55564 N55404  15k TC=0,0 
+C_C8         0 N56008  10u  TC=0,0 
+C_C6         N55758 N55614  1u  TC=0,0 
+R_R19         N56150 N55682  15k TC=0,0 
+C_C14         N55610 N55404  4.7u  TC=0,0 
+C_C4         N56100 N55850  1u  TC=0,0 
+C_C7         N55912 N55978  1u  TC=0,0 
+R_R29         N55522 N55404  9.1k TC=0,0 
+R_R26         N55758 N55404  82 TC=0,0 
+R_R2         N55758 N55404  82 TC=0,0 
+R_R16         0 N55978  1k TC=0,0 
+R_R8         N56324 N55850  1.8k TC=0,0 
+R_R21         N55682 N55522  9.1k TC=0,0 
+R_R9         N55614 N55404  47k TC=0,0 
+R_R10         0 N55614  6.8k TC=0,0 
+R_R22         N55610 N55404  510 TC=0,0 
+C_C13         N55682 N55912  11n  TC=0,0 
+Q_Q2         N55728 N55614 N56008 BC817-25 
+R_R1         0 N56156  150 TC=0,0 
+Q_Q4         N55912 N55682 N55610 BC807-25 
+R_R7         N55850 N55404  47k TC=0,0 
+C_C11         N55728 N55682  1u  TC=0,0 
+R_R13         N56396 N56008  82 TC=0,0 
+V_V1         N56100 0  AC 50mv
++SIN 0 50mv 5k 0 0 0
+V_V3         N56190 0 0
+R_R25         0 N56324  10 TC=0,0 
+D_D2         N55850 N56190 D1N4148_1 
+D_D3         N55564 0 SMLS14BET 
+
+**** RESUMING a.cir ****
+.END
+
+**** 12/14/24 01:48:28 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-a"  [ C:\Users\DTIC\Desktop\P1_Pspice\P1_Pspice-PSpiceFiles\SCHEMATIC1\a.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               SMLS14BET       D1N4148_1       
+          IS  405.890000E-24    2.682000E-09 
+           N    2.4475          1.836        
+         ISR                    1.565000E-09 
+         IKF     .98529          .04417      
+          BV                  100            
+         IBV                  100.000000E-06 
+          RS   15.483            .5664       
+          TT                   11.540000E-09 
+         CJO   38.500000E-12    4.000000E-12 
+          VJ     .87273          .5          
+           M     .20189          .3333       
+          EG    2.638                        
+
+
+**** 12/14/24 01:48:28 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-a"  [ C:\Users\DTIC\Desktop\P1_Pspice\P1_Pspice-PSpiceFiles\SCHEMATIC1\a.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               BC817-25        BC807-25        
+               NPN             PNP             
+       LEVEL    1               1            
+          IS   32.530000E-15   32.530000E-15 
+          BF  294.4           340            
+          NF    1               1            
+         VAF  100             100            
+         IKF     .8311           .4118       
+         ISE  318.500000E-15  288.900000E-15 
+          NE    1.642           1.568        
+          BR    5.855           6.333        
+          NR    1               1            
+         IKR     .1075           .03284      
+         ISC  199.700000E-15  262.400000E-15 
+          NC    2.09            1.87         
+          NK     .5663           .5241       
+         ISS    0               0            
+          RE    0               0            
+          RC     .4196           .3998       
+         CJE   71.140000E-12   71.140000E-12 
+         VJE     .5              .5          
+         MJE     .3333           .3333       
+         CJC   24.290000E-12   24.290000E-12 
+         VJC     .5              .5          
+         MJC     .3333           .3333       
+        XCJC    1               1            
+         CJS    0               0            
+         VJS     .75             .75         
+          TF  660.800000E-12  704.100000E-12 
+         XTF   88.29            1.332000E+03 
+         VTF   10              10            
+         ITF    2.569          14.26         
+          TR   10.000000E-09   10.000000E-09 
+         XTB    1.5             1.5          
+          KF    0               0            
+          AF    1               1            
+          CN    2.42            2.2          
+           D     .87             .52         
+
+
+**** 12/14/24 01:48:28 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-a"  [ C:\Users\DTIC\Desktop\P1_Pspice\P1_Pspice-PSpiceFiles\SCHEMATIC1\a.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N55404)   15.0000 (N55522)   13.4250 (N55564)    2.6810 (N55610)   12.5140     
+
+(N55614)    1.6535 (N55682)   11.8490 (N55728)    3.8900 (N55758)   15.0000     
+
+(N55850)     .4641 (N55912)    9.7115 (N55978)    0.0000 (N56008)     .9668     
+
+(N56100)    0.0000 (N56150)    8.9824 (N56156) 346.5E-06 (N56190)    0.0000     
+
+(N56324)     .0026 (N56396)     .0524 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V2        -1.757E-02
+    V_V1         0.000E+00
+    V_V3         5.282E-05
+
+    TOTAL POWER DISSIPATION   2.64E-01  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 12/14/24 01:48:28 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-a"  [ C:\Users\DTIC\Desktop\P1_Pspice\P1_Pspice-PSpiceFiles\SCHEMATIC1\a.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =        6.78
+
