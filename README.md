@@ -15,6 +15,6 @@ This project gave me valuable hands-on experience in circuit design, PCB layout,
 
   SCHEMATIC – Contains the schematic design files, divided into:
 
-    PSpice Simulation – Includes the schematic designed for circuit simulation in PSpice, used to test and verify the amplification circuit before implementation.
-       
-    PCB Layout – Holds schematic files specifically adapted for PCB design.
+   PSpice Simulation – Includes the schematic designed for circuit simulation in PSpice, used to test and verify the amplification circuit before implementation.
+  
+   PCB Layout – Holds schematic files specifically adapted for PCB design.
